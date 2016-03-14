@@ -15,6 +15,7 @@
 #import "Case3ViewController.h"
 #import "Case4ViewController.h"
 #import "Case5ViewController.h"
+#import "Case6ViewController.h"
 
 @interface rootTableViewController ()
 
@@ -35,6 +36,7 @@
                    @"点击按钮label改变内容 case-3",
                    @"简单表单 case-4",
                    @"打开和关闭键盘通知 case-5",
+                   @"奥运会比赛项目 case-6",
                    nil];
     _DesDatas = [[NSArray alloc] initWithObjects:
                  @"这是我的第一个ios小程序",
@@ -42,6 +44,7 @@
                  @"点击按钮label改变内容",
                  @"label,textfield,textView应用",
                  @"打开和关闭键盘通知 ",
+                 @"奥运会比赛项目 UICollectionView",
                  nil];
     
     
@@ -107,6 +110,8 @@
         case 4:
             [self.navigationController pushViewController:[[Case5ViewController alloc] init] animated:YES];
             break;
+        case 5:
+            [self.navigationController pushViewController:[[Case6ViewController alloc] init] animated:YES];
         default:
             break;
     }
